@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="./images/yes.png" type="img/123.jpg" />
+    <title>中華民國心率學會</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            /* 100% of the viewport height */
+            box-sizing: border-box;
+
+        }
+
+        /* 上半部分 */
+        #top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #f0f0f0;
+            /* 上半部分的背景色，您可以根據需要更改 */
+            padding: 20px;
+            height: 10%;
+            /* 固定上半部分的高度為10% */
+            box-sizing: border-box;
+        }
+
+        #top-left {
+            width: 20%;
+            /* 固定左邊的寬度為30% */
+        }
+
+        #top-right {
+            width: 80%;
+            /* 固定右邊的寬度為60% */
+            display: flex;
+            justify-content: space-around;
+            /* 平均分配每個欄位的空間 */
+            align-items: center;
+        }
+
+        #top-right a {
+            font-family: "Arial", sans-serif;
+            /* 修改字體 */
+            font-size: 20px;
+            /* 修改字體大小 */
+            text-decoration: none;
+            /* 移除連結的下劃線 */
+            color: #333;
+            /* 修改字體顏色 */
+            margin: 0 10px;
+            /* 設定間距 */
+        }
+
+        /* 中間部分 */
+        #middle {
+            background-color: #3498db;
+            /* 中間部分的背景色，您可以根據需要更改 */
+            padding: 20px;
+            height: 60%;
+            /* 固定中間部分的高度為60% */
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .content-container {
+            position: absolute;
+            top: 50%;
+            /* 將內容容器置於中間 */
+            left: 50%;
+            transform: translate(-50%, -50%);
+            /* 使用 translate 來調整位置 */
+            text-align: center;
+            /* 讓內容置中 */
+        }
+
+        .middle-image {
+            max-width: 100%;
+            /* 確保圖片不超出內容容器 */
+            max-height: 100%;
+            /* 確保圖片不超出內容容器 */
+            display: block;
+            /* 確保圖片不受 inline 元素的 baseline 影響 */
+            margin: 0 auto;
+            /* 使圖片水平居中 */
+        }
+
+        .text-container {
+            margin-top: 20px;
+            /* 設定文字容器與圖片之間的距離 */
+        }
+
+        .text-container p {
+            margin: 0;
+            /* 移除段落的預設邊距 */
+            font-family: "Arial", sans-serif;
+            /* 修改字體 */
+            color: #fff;
+            /* 修改字體顏色 */
+            font-size: 18px;
+            /* 修改字體大小 */
+        }
+
+        /* 下半部分 */
+        #bottom {
+            display: flex;
+            justify-content: space-between;
+            background-color: #f0f0f0;
+            /* 下半部分的背景色，您可以根據需要更改 */
+            padding: 20px;
+            height: 10%;
+            /* 固定下半部分的高度為10% */
+            box-sizing: border-box;
+        }
+
+        #bottom-left,
+        #bottom-center,
+        #bottom-right {
+            width: 30%;
+            /* 固定左中右的寬度為30% */
+        }
+
+        .logo {
+            max-height: 100%;
+            /* 最大高度為區塊高度的100%，即10% */
+            width: auto;
+            /* 保持原始寬高比例 */
+            display: block;
+            /* 使圖片居中 */
+            margin: 0 auto;
+            /* 使圖片水平居中 */
+            max-width: 100%;
+            /* 最大寬度為區塊寬度的100%，即30% */
+        }
+    </style>
+    <title>Your Webpage</title>
+</head>
+
+<body>
+
+    <!-- 上半部分 -->
+    <div id="top">
+        <div id="top-left">
+            <!-- 放置圖片的代碼 -->
+        </div>
+        <div id="top-right">
+            <div class="header">
+                <div class="menu">
+                    <a href="http://127.0.0.1:5500/Index.html" class="menu-item">2023 AUTUMN FORUM</a>
+                    <a href="http://127.0.0.1:5500/Banner.html" class="menu-item">Banner上傳</a>
+                    <a href="http://127.0.0.1:5500/SetDate.html" class="menu-item">研討會日期設定</a>
+                    <a href="#" class="menu-item">固定欄位控制</a>
+                    <a href="http://127.0.0.1:5500/Registration.html" class="menu-item">Registration Category</a>
+                    <a href="#" class="menu-item">Additional Purchase</a>
+                    <a href="#" class="menu-item">Excel 報名人員匯入</a>
+                </div>
+            </div><!-- 放置七個選項的代碼 -->
+        </div>
+    </div>
+
+    <!-- 中間部分 -->
+    <div id="middle">
+        <div class="content-container">
+
+            <!-- 放置內容的代碼 -->
+            <img src="./images/123.jpg" alt="heart" class="middle-image">
+            <div class="text-container">
+                <h2>Welcome to Your Website</h2>
+                <p>This is the content area.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- 下半部分 -->
+    <div id="bottom">
+        <div id="bottom-left">
+            <!-- 放置身分+mail的代碼 -->
+        </div>
+        <div id="bottom-center">
+            <!-- 放置地址的代碼 -->
+        </div>
+        <div id="bottom-right">
+            <!-- 放置連絡電話的代碼 -->
+        </div>
+    </div>
+
+</body>
+
+</html>
